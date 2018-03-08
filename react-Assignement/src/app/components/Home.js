@@ -116,20 +116,38 @@ export default class Home extends Component {
 <br/>
 <br/>The url mapping for pages.
 <br/>
-<Table striped bordered condensed hover>
+<table className="table">
 <thead>
-    <tr> <th>Path</th> <th>Component</th>  </tr>
+    <tr>
+        <td>Path</td>
+        <td>Component</td>
+    </tr>
     </thead>
     <tbody>
-    <tr> <td>/</td> <td>Home</td>   </tr>
-    <tr> <td>/about</td> <td>About</td>   </tr>
-    <tr> <td>/contact</td> <td>Contact</td>   </tr>
-    <tr> <td>/states</td> <td>StateList</td>   </tr>
-    <tr> <td>/states/view/:id</td> <td>StateView</td>   </tr>
-    <tr> <td>/states/edit/1234</td> <td>StateEdit</td>   </tr>
-    <tr> <td>/states/create</td> <td>StateEdit</td>   </tr>
+    <tr>
+        <td>/</td>
+        <td>Home</td>
+    </tr>
+    <tr>
+        <td>/about</td><td>About</td>
+    </tr>
+    <tr>
+        <td>/contact</td><td>Contact</td>
+    </tr>
+    <tr>
+        <td>/states</td> <td>StateList</td>
+    </tr>
+    <tr>
+        <td>/states/view/:id</td> <td>StateView</td>
+    </tr>
+    <tr>
+        <td>/states/edit/1234</td> <td>StateEdit</td>
+    </tr>
+    <tr>
+        <td>/states/create</td> <td>StateEdit</td>
+    </tr>
     </tbody>
-</Table>
+</table>
 
 <br/>
 <br/>Restful APIs

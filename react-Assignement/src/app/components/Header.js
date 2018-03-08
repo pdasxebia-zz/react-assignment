@@ -26,15 +26,16 @@ export default class Header extends React.Component{
                         <a href="#home">React-Assignment</a>
                         </Navbar.Brand>
                     </Navbar.Header>
-                    <Nav>
+                   
                        {this.state.menu.map((item)=>
-                   <NavItem key={item} >
-                    <NavLink to={item[1]} exact className="button" activeClassName="success">
+                   <span key={item} >
+                   
+                    <NavLink to={item[1]} exact className="button" activeClassName="success" >
                     {item[0]}
                     </NavLink>
-                   </NavItem>
+                   </span>
                     )}
-                    </Nav>
+                   
                     </Navbar>
             </div>
         );

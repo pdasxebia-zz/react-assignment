@@ -32,7 +32,7 @@ export default class StateList extends Component {
 
                                 states.map(state => (
 
-                                    <tr> <td>{state.id}</td> <td>{state.name} </td> <td>
+                                    <tr key={state.id}> <td>{state.id}</td> <td>{state.name} </td> <td>
                                         <NavLink to={"/state/view/" + state.id} key={state.id}>
                                             View
                         </NavLink>
